@@ -16,3 +16,4 @@ ap <- NULL
 
 xxx2 <- xxx[(!duplicated), ]
 ### 이거를 분리하는 방법이 필요합니다.
+st2_sep <- statuslist[(loop_i - big_inc) : (loop_i - 1)]
