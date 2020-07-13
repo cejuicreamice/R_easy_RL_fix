@@ -15,8 +15,10 @@ ap <- NULL
 ### 누적해서 더하는 방식을 취해야 하는 것 같습니다.
 xxx2 <- xxx[!duplicated(xxx), ]
 
-### 이거를 분리하는 방법이 필요합니다.
+### 이거 중 duplicated 제거 부분을 기존 중복제거 부분과 5000 단위로 추가할 부분으로 분할해 다운사이징한 코드입니다.
 st2_sep <- st_list[(loop_i - big_inc) : (loop_i - 1)]
 zzz2_t <- do.call("rbind", st2_sep)
 zzz2_b <- rbind(zzz2_b, zzz2_t)
-zzz2_b  <- zzz2_b[!
+zzz2_b  <- zzz2_b[!duplicated(zzz2_b), ]
+## 이거를 big_inc  마다 반복합니다.
+
