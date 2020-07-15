@@ -20,5 +20,6 @@ st2_sep <- st_list[(loop_i - big_inc) : (loop_i - 1)]
 zzz2_t <- do.call("rbind", st2_sep)
 zzz2_b <- rbind(zzz2_b, zzz2_t)
 zzz2_b  <- zzz2_b[!duplicated(zzz2_b), ]
-## 이거를 big_inc  마다 반복합니다.
+## 이거를 big_inc (5000번마다 새로운 밀도 plot을 그리니 5000으로 정하면 됩니다)마다 반복합니다.
+## 도중 중단에 대비하여 바뀌는 모든 변수를 i를 파일명에 붙여서 저장할 것을 권장합니다.
 
