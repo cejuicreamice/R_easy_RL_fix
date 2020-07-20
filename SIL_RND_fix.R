@@ -26,15 +26,16 @@ zzz2_b  <- zzz2_b[!duplicated(zzz2_b), ]
 
 
 ## 루프 안에서 i 증가에 따라 변하는 변수 리스트는 현재 작성 중입니다.
-save(qn1
-save(vg
-save(st_list
-save(step_list
-save(reward_list
-save(in_reward_list
-save(reward_total_list
-save(tn
-save(pn
+qn1
+vg
+st_list
+step_list
+reward_list
+in_reward_list
+reward_total_list
+tn
+pn
+
 
 
 ## 참고로 50000이 넘어가면 속도가 쉽게 나지 않습니다. CPU 사양 보고 정 밤에 켜 놓는 게 안되면 
