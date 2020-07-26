@@ -38,6 +38,8 @@ reward_total_list
 tn
 pn
 
+# 1) Initialize in i LOOP : X
+
 ## 참고로 50000이 넘어가면 속도가 쉽게 나지 않습니다. CPU 사양 보고 정 밤에 켜 놓는 게 안되면 
 ## 개인서버나 클라우드 등을 권장합니다. ㅠㅠ
 ## goorm test planning......
