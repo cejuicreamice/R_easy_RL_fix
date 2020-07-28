@@ -38,7 +38,40 @@ reward_total_list
 tn
 pn
 
+bi2
+replay_buffer
+current_state
+cov_next_state
+re_ep
+bi3
+vs
+buffer_v
+vloss
+final_action_list
+final_total_reward_list
+
 # 1) Initialize in i LOOP : X
+init_data
+init_feat
+total_inr
+total_r
+final_total_r
+imsi_memory
+ap
+mb
+tr_c
+bi
+inr_memory
+inr_memory2
+step
+action_list
+episode_done
+memory
+reward_memory
+epoch_index
+st_2
+action_index
+
 
 ## 참고로 50000이 넘어가면 속도가 쉽게 나지 않습니다. CPU 사양 보고 정 밤에 켜 놓는 게 안되면 
 ## 개인서버나 클라우드 등을 권장합니다. ㅠㅠ
