@@ -61,21 +61,20 @@ ilikettt
 TF_at
 
 
-
+pred_memory
+start_point_list
+goal_point_list
+bi4
 q_table
 rad_list
-tot_att
 r
+tot_att
 attack_cnt
 st_mis_list
 avoid_action_list
 plot_att_rat
 die_action_list
 in
-pred_memory
-start_point_list
-goal_point_list
-bi4
 
 
 
@@ -107,6 +106,48 @@ re_ep
 current_state
 cov_next_state
 buffer_v
+
+
+#loading
+load(paste0("rnd_zzz2_b", "_", i, ".RData"))
+load(paste0("rnd_qn1", "_", i, ".RData"))
+load(paste0("rnd_vg", "_", i, ".RData"))
+load(paste0("rnd_st_list", "_", i, ".RData"))
+load(paste0("rnd_step_list", "_", i, ".RData"))
+load(paste0("rnd_reward_list", "_", i, ".RData"))
+load(paste0("rnd_in_reward_list", "_", i, ".RData"))
+load(paste0("rnd_reward_total_list", "_", i, ".RData"))
+load(paste0("rnd_tn", "_", i, ".RData"))
+load(paste0("rnd_pn", "_", i, ".RData"))
+load(paste0("rnd_bi2", "_", i, ".RData"))
+load(paste0("rnd_bi3", "_", i, ".RData"))
+load(paste0("rnd_replay_buffer", "_", i, ".RData"))
+load(paste0("rnd_vs", "_", i, ".RData"))
+load(paste0("rnd_final_action_list", "_", i, ".RData"))
+load(paste0("rnd_final_total_reward_list", "_", i, ".RData"))
+load(paste0("rnd_in_reward_list2", "_", i, ".RData"))
+load(paste0("rnd_v_list", "_", i, ".RData"))
+load(paste0("rnd_p_list", "_", i, ".RData"))
+load(paste0("rnd_h_list", "_", i, ".RData"))
+load(paste0("rnd_th_list", "_", i, ".RData"))
+load(paste0("rnd_bbc", "_", i, ".RData"))
+load(paste0("rnd_ilikettt", "_", i, ".RData"))
+load(paste0("rnd_TF_at", "_", i, ".RData"))
+load(paste0("rnd_pred_memory", "_", i, ".RData"))
+load(paste0("rnd_start_point_list", "_", i, ".RData"))
+load(paste0("rnd_goal_point_list", "_", i, ".RData"))
+load(paste0("rnd_bi4", "_", i, ".RData"))
+load(paste0("rnd_q_table", "_", i, ".RData"))
+load(paste0("rnd_rad_list", "_", i, ".RData"))
+load(paste0("rnd_r", "_", i, ".RData"))
+load(paste0("rnd_tot_att", "_", i, ".RData"))
+load(paste0("rnd_attack_cnt", "_", i, ".RData"))
+load(paste0("rnd_st_mis_list", "_", i, ".RData"))
+load(paste0("rnd_avoid_action_list", "_", i, ".RData"))
+load(paste0("rnd_plot_att_rat", "_", i, ".RData"))
+load(paste0("rnd_die_action_list", "_", i, ".RData"))
+load(paste0("rnd_in", "_", i, ".RData"))
+
 
 ## 참고로 50000이 넘어가면 속도가 쉽게 나지 않습니다. CPU 사양 보고 정 밤에 켜 놓는 게 안되면 
 ## 개인서버나 클라우드 등을 권장합니다. ㅠㅠ
