@@ -19,6 +19,8 @@ xxx2 <- xxx[!duplicated(xxx), ]
 st2_sep <- st_list[(loop_i - big_inc) : (loop_i - 1)]
 zzz2_t <- do.call("rbind", st2_sep)
 zzz2_b <- rbind(zzz2_b, zzz2_t)
+## zzz2_b (기존)에다가 이어붙이기
+
 zzz2_b  <- zzz2_b[!duplicated(zzz2_b), ]
 ## 이거를 big_inc (5000번마다 새로운 밀도 plot을 그리니 5000으로 정하면 됩니다)마다 반복합니다.
 ## 도중에 R을 쓸 일이 생겨서 어쩔 수 없이 중단하는 거에 대비하여 바뀌는 모든 변수를 i를 파일명에 붙여서 저장할 것을 권장합니다.
@@ -28,6 +30,10 @@ zzz2_b  <- zzz2_b[!duplicated(zzz2_b), ]
 ## 쉘 환경, 특히 구름 쉘환경에서 실행할 경우에는 그래프 라이브러리가 잘 동작하지 않습니다. 따라서 이럴 경우 상태를 RData로 Export -> Import + 그래프 출력 방식의 전략이 필요합니다.
 
 ## 루프 안에서 i 증가에 따라 변하는 변수 리스트는 현재 작성 중입니다.
+## saving form:
+save(qn1, file = paste0("rnd_qn1_", "i", ".RData"))
+
+
 qn1
 vg
 st_list
@@ -39,16 +45,41 @@ tn
 pn
 
 bi2
-replay_buffer
-current_state
-cov_next_state
-re_ep
 bi3
+replay_buffer
 vs
-buffer_v
 vloss
 final_action_list
 final_total_reward_list
+in_reward_list2
+v_list
+p_list
+h_list
+th_list
+bbc
+ilikettt
+TF_at
+
+
+
+q_table
+rad_list
+tot_att
+r
+attack_cnt
+st_mis_list
+avoid_action_list
+plot_att_rat
+die_action_list
+in
+pred_memory
+start_point_list
+goal_point_list
+bi4
+
+
+
+
 
 # 1) Initialize in i LOOP : X
 init_data
@@ -71,7 +102,11 @@ reward_memory
 epoch_index
 st_2
 action_index
-
+# 2) Initialize in ep_dn LOOP : X
+re_ep
+current_state
+cov_next_state
+buffer_v
 
 ## 참고로 50000이 넘어가면 속도가 쉽게 나지 않습니다. CPU 사양 보고 정 밤에 켜 놓는 게 안되면 
 ## 개인서버나 클라우드 등을 권장합니다. ㅠㅠ
