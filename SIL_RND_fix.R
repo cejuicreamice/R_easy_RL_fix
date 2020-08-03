@@ -52,6 +52,8 @@ vloss
 final_action_list
 final_total_reward_list
 in_reward_list2
+
+
 v_list
 p_list
 h_list
@@ -59,7 +61,6 @@ th_list
 bbc
 ilikettt
 TF_at
-
 
 pred_memory
 start_point_list
@@ -126,6 +127,7 @@ load(paste0("rnd_vs", "_", i, ".RData"))
 load(paste0("rnd_final_action_list", "_", i, ".RData"))
 load(paste0("rnd_final_total_reward_list", "_", i, ".RData"))
 load(paste0("rnd_in_reward_list2", "_", i, ".RData"))
+
 load(paste0("rnd_v_list", "_", i, ".RData"))
 load(paste0("rnd_p_list", "_", i, ".RData"))
 load(paste0("rnd_h_list", "_", i, ".RData"))
@@ -146,7 +148,7 @@ load(paste0("rnd_st_mis_list", "_", i, ".RData"))
 load(paste0("rnd_avoid_action_list", "_", i, ".RData"))
 load(paste0("rnd_plot_att_rat", "_", i, ".RData"))
 load(paste0("rnd_die_action_list", "_", i, ".RData"))
-load(paste0("rnd_in", "_", i, ".RData"))
+#load(paste0("rnd_in", "_", i, ".RData"))
 
 
 ## 참고로 50000이 넘어가면 속도가 쉽게 나지 않습니다. CPU 사양 보고 정 밤에 켜 놓는 게 안되면 
