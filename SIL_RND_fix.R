@@ -53,6 +53,8 @@ final_action_list
 final_total_reward_list
 in_reward_list2
 
+####
+# NOT
 
 v_list
 p_list
