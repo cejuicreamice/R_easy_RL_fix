@@ -15,6 +15,8 @@ ap <- NULL
 ### 누적해서 더하는 방식을 취해야 하는 것 같습니다.
 xxx2 <- xxx[!duplicated(xxx), ]
 
+### 주의사항: 이거를 하고 나서 35000 이상일 때에는 실행하지 못하도록 if 구문을 다시 확인 바랍니다.
+
 ### 이거 중 duplicated 제거 부분을 기존 중복제거 부분과 5000 단위로 추가할 부분으로 분할해 다운사이징한 코드입니다.
 st2_sep <- st_list[(loop_i - big_inc) : (loop_i - 1)]
 zzz2_t <- do.call("rbind", st2_sep)
