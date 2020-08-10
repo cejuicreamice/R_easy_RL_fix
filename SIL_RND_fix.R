@@ -27,9 +27,36 @@ zzz2_b  <- zzz2_b[!duplicated(zzz2_b), ]
 ## 이거를 big_inc (5000번마다 새로운 밀도 plot을 그리니 5000으로 정하면 됩니다)마다 반복합니다.
 ## 도중에 R을 쓸 일이 생겨서 어쩔 수 없이 중단하는 거에 대비하여 바뀌는 모든 변수를 i를 파일명에 붙여서 저장할 것을 권장합니다.
 ## 일부 변수들이 저장이 안되는 상황인데, 해당 변수에 대해서 저장하는 코드를 추가하여 해당 i부터 되돌려 실행할 수 있도록 하는 것이 필요합니다.
+if (i %% 100000 == 0) {
 
+#another_digits = i %/% 100000
+# loop : i %/% 100000 -> i %/% 10 -> i %/% 10 -> i %/% 10 -> i %/% 10 do-while loop!!!!!
+
+#temp
+#another_digits <- 1
+# temp 100,000 ~ 900,000
+digits_add <- "0"
+
+conv_i_chr <- paste0(as.character(i %/% 100000), digits_add)
+
+}
 
 ## 쉘 환경, 특히 구름 쉘환경에서 실행할 경우에는 그래프 라이브러리가 잘 동작하지 않습니다. 따라서 이럴 경우 상태를 RData로 Export -> Import + 그래프 출력 방식의 전략이 필요합니다.
+
+##
+## 다른 데에도 올리겠지만 R에는 논리적으로 심각한 Numeric -> Character 변환시 E형으로 강제 변환되는 문제가 있습니다.
+# 100000 : 1e+05, 200000 : 2e+05 등 입니다.
+## 실제로 논리적 문제라는 출처: https://stackoverflow.com/questions/32339636/long-numbers-as-a-character-string
+## 해결하는 코드는 아래와 같습니다.
+if (i %% 100000 == 0) {
+
+# temp 100,000 ~ 900,000
+digits_add <- "0"
+
+conv_i_chr <- paste0(as.character(i %/% 100000), digits_add)
+
+}
+
 
 ## 루프 안에서 i 증가에 따라 변하는 변수 리스트는 현재 작성 중입니다.
 ## saving form:
