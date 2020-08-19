@@ -34,4 +34,10 @@ AWS의 경우 크레딧이 있다면 m5.large에 Red Hat 8.5 AMI를 깔면 8GB �
 
 R코드는 Jupyter Notebook과 달리 Collapse All, Expand All 잘 써야 한다고 생각합니다.
 
+# 기타 꿀팁
+
+becominghuman.ai/comprehending-k-means-and-knn-algorithms-c791be90883d
+
+
+
 마크다운이 살짝 번거로운 면이 있어서 그렇습니다.
